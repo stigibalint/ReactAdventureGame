@@ -1,0 +1,112 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #f9a825;
+  margin-bottom: 20px;
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.error {
+  color: #e57373;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  background: #f9a825;
+  color: #121212;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ffd54f;
+}
+
+button:disabled {
+  background: #616161;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.location {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.location img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.stats p {
+  background: #212121;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 48%;
+}
+
+.items {
+  margin-top: 20px;
+  padding: 10px;
+  background: #212121;
+  border-radius: 5px;
+}
+
+.items p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .stats {
+    flex-direction: column;
+  }
+
+  .stats p {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
